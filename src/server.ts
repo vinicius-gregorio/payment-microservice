@@ -6,4 +6,4 @@ app.get('/status', (request, response) => {
   return response.json({ status: 'ONLINE' });
 });
 
-app.listen(SERVER_PORT);
+app.listen(SERVER_PORT, () => console.log(`😬 😬 Server is running on port ${SERVER_PORT}`));
